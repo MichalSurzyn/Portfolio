@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BIURO PODRÓŻY | TROPEM ŚREDNIOWIECZNYCH ZAMKÓW</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Michał Surzyn">
+    <meta name="keywords" content="Zamki, Średniowiecze, Polska, Francja, Niemcy, Czechy, Orle Gniazda ">
+    <meta name="description" content="Biuro Podróży, tropem średniowiecznych zamków">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="obrazy/fav.png">
+</head>
+
+<body>
+    
+<div id="contener">
+    <header>
+        <a href="index.html"><div id="logo">
+            
+          
+            
+            
+            </div></a>
+        
+        <nav>
+            <ul>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="oferty.html">Oferta</a></li>
+                <li><a href="promocje.html">Promocje</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div id="czas">
+            
+            <script>
+                function czas(){
+                var dzis = new Date();
+                var x = dzis.toLocaleTimeString();
+                    document.getElementById("czas").innerHTML = x;
+                }
+                czas();
+                setInterval('czas()',1000);
+            </script>
+        </div>
+    </header>
+
+    <main>
+        <div id="form">
+        
+    <form method="get" action="mailto:michal.surzyn@ze.krakow.pl" enctype="multipart/form-data">
+        <table>
+        <tr>
+            <td><p>Imię</p></td>
+            <td><input type="text" name="Imie" id="imie" placeholder="Imię" required></td>
+        </tr>
+        <tr>
+            <td><p>Nazwisko</p></td>
+            <td><input type="text" name="Nazwisko" id="nazw" placeholder="Nazwisko" required></td>
+        </tr>
+        <tr>
+            <td><p>E-mail</p></td>
+            <td><input type="text" id="email" placeholder="E-mail" required></td>
+        </tr>
+        <tr>
+            <td><p>Nr Telefonu</p></td>
+            <td><input type="number" name="telefon" id="tel" placeholder="nr tel" required></td>
+        </tr>
+        <tr>
+            <td><p>Data</p></td>
+            <td><input type="date" name="data" id="dat" required></td>
+        </tr>
+        <tr>
+            <td><p>Liczba dni</p></td>
+            <td><input type="number" name="ldni" id="ldni" placeholder="liczba dni" required></td>
+        </tr>
+        <tr>
+            <td><p>Wybierz Wycieczkę</p></td>
+            <td>
+                <select>
+                    <option id="wawel">Na Wawel</option>
+                    <option id="orleg">Szlakiem Orlich Gniazd </option>
+                    <option id="czechy">Wycieczka do Czech </option>
+                    <option id="francja">Wycieczka do Francji </option>
+                    <option id="niemcy">Wycieczka do Niemiec </option>
+                </select>
+            </td>
+        </tr>
+        </table>
+        <br>
+        <input class="button" type="submit" onclick="spr()" value="Wyślij">
+        <input class="button" type="reset" value="Wyczyść">
+    </form> 
+        </div>
+            
+            <script>
+            
+function spr() {
+    
+    
+    var wzimie = /^[a-zA-ZąęóźżłśćńĄĘÓŻŹŁŚĆŃ]{2,}$/;
+    var imie = document.getElementById("imie").value;
+    var chimie = imie.search(wzimie);
+    
+    if (chimie == -1 || imie == !isNaN){
+        alert("Podaj poprawne imie");
+    }
+        
+
+    
+    var wznazw = /^[a-zA-ZąęóźżłśćńĄĘÓŻŹŁŚĆŃ]{2,}$/;
+    var nazw = document.getElementById("nazw").value;
+    var chnazw = nazw.search(wznazw);
+    
+    if (chnazw == -1 || nazw == !isNaN){
+        alert("Podaj poprawne nazwisko");
+    }
+    
+
+    var wzem = /\S+[@]\S+.[a-z]{2,3}$/;;
+    var email = document.getElementById("email").value;
+    var chemail = email.search(wzem);
+    
+    if (chemail == -1 || mail == !isNaN){
+        alert("Podaj poprawny E-mail")
+    }
+    
+
+    var wztel = /^\d{9}$/;
+    var tel = document.getElementById("tel").value;
+    var chtel = tel.search(wztel);
+    
+    if(chtel == -1 || tel == !isNaN){
+        alert("Podaj poprawny numer telefonu");
+    }
+}
+</script>
+        
+    </main>
+
+    
+</div>
+    <footer>
+        <br>
+        <h2>Copyright 2021 Michał Surzyn 3F ZSE &copy;</h2>
+    </footer>
+</body>
+</html>

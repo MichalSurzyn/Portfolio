@@ -1,0 +1,60 @@
+FONTY STRONY
+
+    Mark OT W01 Regular
+    Muli Light
+    Muli Regular
+    Muli ExtraBold
+    Bahnschrift SemiBold
+
+..................................................
+KOLORY STRONY:
+..................................................
+bia³y #fff
+ciemnoszary #323c48;
+malinowy #fd5241;
+morski #61ded0;
+..................................................
+
+TEKST STRONY
+.................................................
+Film
+
+Features
+Guide
+Tech Specs
+What's New
+Reviews
+Try Now
+Buy Now
+
+Create your world of stories
+
+Start your video project now
+or downloading the free trial.
+
+Try Now Buy Now
+Products
+Film
+Film
+Film
+ 
+Support
+FAQ
+Film 
+Contract Support
+
+Downloads
+
+Film for Windows
+Film for Mac
+Film Scrn for Windows
+Film Scrn for Mac
+FilmGo for iOS
+FilmGo for Android
+
+Follow us
+
+Newsletter
+
+Email
+Join Now

@@ -1,0 +1,270 @@
+@font-face{
+    font-family: "Muli";
+  src: url("FONTS/Muli.ttf");
+    
+}
+@font-face{
+    font-family: "Muli-Bold";
+  src: url("FONTS/Muli-Bold.ttf");
+    
+}
+body{
+    margin: 0 auto;
+    font-family: "Muli";
+}
+#TOP{
+    width: 100%;
+    height: 45px;
+    background-color: #323c48;
+    position: relative;
+    margin: 0 auto;
+    top:0;
+}
+#TOP img{
+    width: 20px;
+    float: left;
+    margin-left: 80px;
+    padding-top:11px;
+}#TOP h2{
+    margin: 0;
+    float: left;
+    color: #fff;
+    font-family: "Muli";
+    font-size: 15pt;
+    padding-top: 4px;
+}
+#BOTTOM{
+    width: 100%;
+    height: 250px;
+    background-image: url(IMG/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+#BOTTOM h1{
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    position: relative;
+    top:35%;
+    left: 20%;
+    color: #fff;
+    font-family: "Muli";
+    text-shadow: 2px 2px #323c48;
+}
+main{
+    margin: 0 auto;
+    width: 35%;
+    height: 100%;
+}#ff{
+    margin: 0 auto;
+    width: 35%;
+    padding-top: 50px;
+}
+main h1{
+    margin: 0;
+    font-size: 30pt;
+    font-family: "Muli-Bold";
+    font-weight: bold;
+   
+}
+#film{
+    position: relative;
+    top: 40px;
+    left: 100px;
+}
+#film img{
+    width: 50px;
+    float: left;
+    margin-left: 80px;
+    padding-top: 8px;
+}
+#contener{
+    margin: 0 auto;
+    width: 100%;
+    height: 350px;
+    background-image: url(IMG/bg2.png);
+    border-bottom: solid 4px #61ded0;
+    position: relative;
+}#contener2{
+    margin: 0 auto;
+    width: 100%;
+    height: 350px;
+    background-image: url(IMG/bg2.png);
+    border-bottom: solid 4px #61ded0;
+    position: relative;
+}#contener3{
+    margin: 0 auto;
+    width: 100%;
+    height: 550px;
+    background-image: url(IMG/bg2.png);
+    border-bottom: solid 4px #61ded0;
+    position: relative;
+}
+nav{
+    width: 50%;
+    float: right;
+    margin-top: 10px;
+}
+ul{
+    list-style: none;
+    text-decoration: none !important;
+    display: inline;
+}
+a{
+    text-decoration: none !important;
+    color: #FFF;
+    width: 200%;
+    font-size: 12pt;
+    font-family: Bahnschrift SemiBold;
+}
+nav li{
+    list-style: none;
+    text-decoration: none !important;
+    display: inline;
+    margin-right: 30px;
+}
+nav li:hover{
+    color: #61ded0;
+}
+a:hover{
+    color:#323c48;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #323c48;
+}
+.lewo{
+    width:200px;
+    height: 100px;
+    float: left;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-top: 30px;
+}
+.lewo h4{
+    margin:0 auto;
+    /*margin-left: 10%;*/
+    color:white;
+    margin-bottom: 15px;
+}
+.lewo:nth-child(4){
+    width: 270px;
+
+}
+.lewo li, ul{
+    margin: 0 auto;
+    padding: 0;
+}
+i{
+    font-size: 20pt;
+    margin-left: 15px;
+    color:#61ded0;
+    margin-bottom: 25px;
+}
+#from{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+#from p{
+    margin: 0;
+    padding: 0;
+}
+textarea{
+    width: 400px;
+    height: 200px;
+}
+#email{
+    background-color: #323c48;
+    border: none;
+    border-bottom: solid 2px white;
+    font-size: 16pt;
+    float: left;
+    width: 160px;
+    margin-top: 10px;
+}
+#submit{
+    width:80px;
+    height: 40px;
+    background-color: #61ded0;
+    border: none;
+    font-weight: bold;
+    float: left;
+    margin-left: 20px;
+    cursor: pointer;
+}#submit2{
+    width:80px;
+    height: 40px;
+    background-color: #61ded0;
+    border: none;
+    font-weight: bold;
+    font-size: 14pt;
+    float: right;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#f1{
+    width: 380px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}#f2{
+    width: 380px;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}#f3{
+    width: 380px;
+    position: absolute;
+    top: 15px;
+    left: 500px;
+}
+span{
+    overflow: hidden;
+}
+nav button{
+    background-color: #61ded0;
+    border: none;
+    font-size: 11pt;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    font-family: Bahnschrift SemiBold;
+}
+nav button:hover{
+    background-color: rgba(255,255,255,0);
+    border: solid 1px red;
+    color: red;
+}
+#contener3 button{
+    width:200px;
+    height: 60px;
+    background-color: #61ded0;
+    border: none;
+    font-weight: bold;
+    font-size: 15pt;
+    cursor: pointer;
+}
+#contener3 button:hover{
+    background-color: rgba(255,255,255,0);
+    border: solid 3px red;
+    font-weight: bold;
+    font-size: 15pt;
+    color: red;
+}
+#b2{
+    position: relative;
+    right: -18%;
+}
+.ee{
+    color: black !important;
+    font-size: 15pt;
+}
+#ee{
+    margin:0 auto;
+    width: 100%;
+}

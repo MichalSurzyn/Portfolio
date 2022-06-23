@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BIURO PODRÓŻY | TROPEM ŚREDNIOWIECZNYCH ZAMKÓW</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Michał Surzyn">
+    <meta name="keywords" content="Zamki, Średniowiecze, Polska, Francja, Niemcy, Czechy, Orle Gniazda ">
+    <meta name="description" content="Biuro Podróży, tropem średniowiecznych zamków">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="obrazy/fav.png">
+</head>
+
+<body>
+    
+<div id="contener">
+    <header>
+        <a href="index.html"><div id="logo">
+            
+          
+            
+            
+            </div></a>
+        
+        <nav>
+            <ul>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="oferty.html">Oferta</a></li>
+                <li><a href="promocje.html">Promocje</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div id="czas">
+            
+            <script>
+                function czas(){
+                var dzis = new Date();
+                var x = dzis.toLocaleTimeString();
+                    document.getElementById("czas").innerHTML = x;
+                }
+                czas();
+                setInterval('czas()',1000);
+            </script>
+        </div>
+    </header>
+
+    <main>
+        
+        
+        <img id="slajd" src="obrazy/zam5.jpg" alt="Zameczki">
+            
+        
+        
+        <h1 id="wakacje">ww</h1>
+            <script>
+                
+            var i = 0;
+           // var obr = ["obrazy/zamek1.jpg","obrazy/zamek2.jpg","obrazy/zamek3.jpg","obrazy/zamek4.jpg","obrazy/zamek5.jpg"];
+            var obr = ["obrazy/zam1.jpg","obrazy/zam2.jpg","obrazy/zam3.jpg","obrazy/zam4.jpg","obrazy/zam5.jpg"];
+                
+                function obraz(){
+                    i++;
+                    if( i >= obr.length ){  
+                    i = 0;
+                    }
+                    document.getElementById("slajd").src = obr[i];
+                    
+                }
+                setInterval('obraz()',3000);
+                
+                
+            var teraz = new Date();
+            var wakacje = new Date(2021,6,25);
+            var ile = wakacje-teraz;
+            var ile_dni = (ile)/(1000*60*60*24);
+            document.getElementById("wakacje").innerHTML = "<br> Do Wakacji zostało "+ile_dni.toFixed(0)+" dni";
+                
+                
+            </script>
+            <br>
+        <h1>O nas:</h1>
+        
+        <p>
+            Witamy na stronie <strong>www.staryzamek.pl</strong> oraz dziękujemy za zainteresowanie naszą ofertą.
+
+Stary Zamek to agencja turystyczna, która powstała z miłości do podróży, z chęci do poznawania świata i ludzi. Zawodowo z turystyką związani jesteśmy od 2008 roku, a od 2017 funkcjonujemy jako biuro podróży.
+
+Chętnie pomożemy w wyborze idealnego urlopu. Nasza pasja do podróży to gwarancja idealnie dobranej oferty wakacyjnej. Wybór wakacji powinien być czymś przyjemnym, dlatego zapraszamy na rozmowę o wakacjach przy filiżance kawy (zachęcamy do wcześniejszego umawiania się na spotkanie).
+
+W naszej ofercie mamy Podróże małe i duże. Współpracujemy z najlepszymi i sprawdzonymi touroperatorami w Polsce.
+        </p>
+        
+        <br>
+        <p>Oferujemy:</p>
+        <ul>
+        <li>wypoczynek pobytowy (samolot/dojazd własny/autokar)</li>
+    <li>wycieczki objazdowe</li>
+<li>wyjazdy egzotyczne</li>
+<li>wyjazdy narciarskie</li>
+<li>obozy i kolonie</li>
+<li>bilety lotnicze, autokarowe, wynajem samochodów, rezerwacja noclegów,</li>
+<li>ubezpieczenia turystyczne (zdrowotne, z rozszerzeniem o choroby przewlekłe, od kosztów rezygnacji i inne).</li>
+        </ul>   
+        
+       <!-- <p>
+            Lorem Ipsum jest tekstem 
+            stosowanym jako przykładowy wypełniacz w 
+            przemyśle poligraficznym. Został po raz pierwszy użyty w XV
+            w. przez nieznanego drukarza do wypełnienia tekstem próbnej
+            książki. Pięć wieków później zaczął być używany przemyśle 
+            elektronicznym, pozostając praktycznie niezmienionym. 
+            Spopularyzował się w latach 60. XX w. wraz z publikacją 
+            arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a 
+            ostatnio z zawierającym różne wersje Lorem Ipsum 
+            oprogramowaniem przeznaczonym do realizacji druków 
+            na komputerach osobistych,
+            jak Aldus PageMaker
+        </p><p>
+            Lorem Ipsum jest tekstem 
+            stosowanym jako przykładowy wypełniacz w 
+            przemyśle poligraficznym. Został po raz pierwszy użyty w XV
+            w. przez nieznanego drukarza do wypełnienia tekstem próbnej
+            książki. Pięć wieków później zaczął być używany przemyśle 
+            elektronicznym, pozostając praktycznie niezmienionym. 
+            Spopularyzował się w latach 60. XX w. wraz z publikacją 
+            arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a 
+            ostatnio z zawierającym różne wersje Lorem Ipsum 
+            oprogramowaniem przeznaczonym do realizacji druków 
+            na komputerach osobistych,
+            jak Aldus PageMaker
+        </p>-->
+        
+    </main>
+
+    
+</div>
+    <footer>
+        <br>
+        <h2>Copyright 2021 Michał Surzyn 3F ZSE &copy;</h2>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,236 @@
+@font-face{
+    font-family:"Zilla";
+    src:url("fonty/ZillaSlab-Regular.ttf");
+}
+*{
+    padding: 0;
+    font-family: Verdena, sans-serif;
+}
+body{
+    margin: 0 auto;
+    background-color: navajowhite;
+}
+#contener{
+    margin: 0 auto;
+    width: 70%;
+    background-color:antiquewhite;
+    min-height: 900px;
+    position: relative;
+}
+header{
+    width:100%;
+    height:100px;
+    background-color: antiquewhite;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    font-family: Zilla, serif;
+}
+nav ul li{
+    display: inline;
+    margin:0;
+    margin-right: 20px;
+    font-size: 27pt;
+    font-family: Zilla, serif;
+    color: #977d4a;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.9s;
+    font-family: Zilla, serif;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+    /*font-weight: bold;*/
+    transition: 0.9s;
+}
+#logo{
+    width: 310px;
+    height: 100px;
+    background-image: url(obrazy/logo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float:left;
+    position: relative;
+    top: 0;
+    transition: 0.9s;
+}
+#logo:hover{
+    background-image: url(obrazy/logo3.png);
+    transition: 0.9s;
+}
+#czas{
+    float: right;
+    margin-top: 40px; 
+    width:100px;
+    height: 50px;
+    font-size: 27pt;
+    color: #977d4a;
+    transition: 0.9s;
+    font-family: Zilla, serif;
+    font-weight: bold;
+}
+#czas:hover{
+    color: black;
+    transition: 0.9s;
+}
+nav{
+    width:60%;
+    height: 40px;
+    float: right;
+    /*background-color: green;*/
+    position: relative;
+    top: 40px;
+    
+}
+main{
+    margin: 0 auto;
+    padding: 20px;
+}
+h1{
+    color: #977d4a;
+    font-family: Zilla, serif;
+}
+h2{
+    color: #977d4a;
+    margin: 0
+}
+p{
+    font-size: 20pt;
+    font-family: sans-serif;
+    text-indent: 1cm;
+    color: #977d4a;
+    text-align: justify;
+    margin: 0 auto;
+  /*  width: 1000px;*/
+}
+ul{
+    font-size: 20pt;
+    font-family: sans-serif;
+    color: #977d4a;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#wakacje{
+    font-size: 30pt;
+    margin: 0;
+    text-align: center;
+    color: #977d4a; 
+    font-family: Zilla, serif;
+}
+#slajd{
+    width:100%;
+    height: 600px;
+   /* background-image: url(obrazy/zamek2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    margin-top: 20px;
+}
+#promo{
+    width:750px;
+    height: 400px;
+    /*position: relative;
+    left: 19%;*/
+    margin: 0 auto;
+    border: solid 1px #977d4a; 
+    border-radius: 30px;
+}
+#form{
+    margin: 0 auto;
+    width: 590px;
+    text-align: center;
+    min-height: 200px;
+    background-color: navajowhite;
+    border: solid 3px #977d4a; 
+    border-radius: 30px;
+    box-shadow: #977d4a 10px 10px 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.gal{
+    margin: 30px;
+    width: 500px;
+    float: left;
+    display: block;
+    text-align: center;
+    min-height: 200px;
+    background-color: navajowhite;
+    border: solid 3px #977d4a; 
+    border-radius: 30px;
+    box-shadow: #977d4a 10px 10px 5px;
+    margin-bottom: 90px;
+}
+.gal h1{
+    font-style: italic;
+}
+.imgg{
+    width: 430px;
+    height: 310px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+   /* box-shadow: #977d4a 0 0 5px 5px;*/
+}
+td{
+    width: 300px;
+    height: 25px;
+}
+#promocja{
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+    min-height: 200px;
+    background-color: navajowhite;
+    border: solid 3px #977d4a; 
+    border-radius: 30px;
+    box-shadow: #977d4a 10px 10px 5px;
+}
+#promocja p{
+    text-align: center;
+    text-indent: 0;
+    margin: 0;
+}
+footer{
+    margin: 0 auto;
+    width: 75%;
+    height: 100px;
+    text-align: center;
+}
+button{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: #977d4a;
+    border: 1px solid white;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px gray;
+}
+.button{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: #977d4a;
+    border: 1px solid white;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px gray;
+}
+footer h2:hover{
+    color: black;
+    transition: 0.9s;
+}
+footer h2{
+    transition: 0.9s;
+    font-family: Zilla, serif;
+}
+input{
+    height: 23px;
+    width: 200px;
+    font-size: 15pt;
+}

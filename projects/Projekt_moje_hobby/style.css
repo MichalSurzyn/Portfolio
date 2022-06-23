@@ -1,0 +1,437 @@
+
+@font-face{
+    font-family:"witcher";
+    src:url("fonty/Thewitcher-jnOj.ttf");
+}
+@font-face{
+    font-family:"kawoszeh";
+    src:url("fonty/kawoszeh.ttf");
+}
+*{
+	padding: 0;
+	color: white;
+    font-family: Verdena, sans-serif;
+}
+@media(max-width:10920px){
+
+body{
+		background-image: url(Obrazy/thumb2.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+   /* background-attachment: fixed;*/
+        width: 100%;
+        min-width: 1366px;
+}
+main{
+	margin: 0 auto;
+	width:930px;
+	min-height: 1200px;
+	background-color: rgba(0,0,0,0.6);
+/*    background: linear-gradient(rgba(100,100,100,0.4),rgba(0,0,0,0.6) 700px,rgba(100,100,100,0.4));*/
+    border-radius: 15px;
+    padding:0;
+    position: relative;
+}
+section{
+    padding: 35px;
+    position:relative;
+}
+p{
+    font-size: 14pt;
+    text-indent: 1cm;
+    text-align: justify;
+}
+span{
+    font-size:32pt;
+    font-family: kawoszeh;
+    font-style: italic;
+}
+h2,h3{
+    font-family: kawoszeh;
+    text-transform:capitalize;
+    font-weight: bold;
+    font-style: italic;
+}
+h3{
+    text-indent: 1cm;
+}
+header{
+	/*background: radial-gradient(ellipse, white 2%,grey 20%, black 65%);*/
+    background-image: url(Obrazy/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode:hard-light;
+    background-color: black;
+	width: 100%;
+	height: 240px;
+	text-align: center;
+    border-radius: 15px;
+}
+#bg{
+    position: relative;
+	top:110px;
+    width:400px;
+    height: 100px;
+    transition: 0.5s;
+    background-color: rgba(0,0,0,0);
+}
+#bg:hover{
+    transition: 0.5s;
+    width: 410px;
+    height:110px;
+    top:100px;
+	background: radial-gradient(ellipse, darkred , rgba(0,0,0,0) 190px);
+}
+nav{
+    width: 100%;
+    height:90px;
+    position: sticky;
+    top:0;
+    border-radius: 15px;
+    background-color: black;
+    font-family: witcher;
+    padding:1px;
+	z-index: 134;
+}
+button{
+    font-family: witcher;
+    display: inline;
+    background-color: rgba(0,0,0,0);
+/*   background: linear-gradient(rgba(0,0,0,0) 45%,darkred);*/
+    border: none;
+    color:red;
+    font-size: 15pt;
+    font-weight: bold;
+    width:150px;
+    height: 55px;
+    margin-left: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+a{
+    font-family: witcher;
+    color:red;
+}
+button:hover{
+/*  background-color: rgb(70,70,70);*/
+    box-shadow: 0 0 30px darkred;
+    background: linear-gradient(rgba(0,0,0,0) 45%,darkred);
+    width:200px;
+    height:55px;
+    font-size:22pt;
+    text-decoration: none;
+}
+button a{
+	color:red;
+}
+.audiom{
+    width: 15px;
+    position: relative;
+    top:20px;
+    transition: 0s;
+}
+audio{
+        transition: 0.8s;
+}
+audio:hover{
+    box-shadow: 0px 0px 40px red;
+    border-radius: 25px;
+}
+footer{
+    margin: 0 auto;
+    width:930px;
+    font-family: witcher;
+    text-align: center;
+    text-transform: uppercase;
+}
+footer h1, footer h5{
+    margin: 2px;
+}
+#stopka1{
+    float: left;
+}
+#stopka2{
+    float: right;
+}
+#stopka1 p,#stopka2 p{
+    font-family: Calibri;
+    text-transform: none;
+    margin: 0;
+    text-align: center;
+    text-indent: 0;
+}
+aside{
+    width:200px;
+    height: 950px;
+    background-image: url(Obrazy/znakipion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.75;
+    position: relative;
+    top:290px;
+    float: left;
+}
+a:link{
+    text-decoration: none;
+}
+.hero{
+    position:absolute;
+	left:120px;
+    width:220px;
+    height:350px;
+    border-radius: 20px;
+    z-index:2;
+    top:60px;
+	transition: 0.5s;
+}
+.heroleft{
+    position:absolute;
+	left:32px;
+    width:220px;
+    height:350px;
+    border-radius: 20px;
+    z-index:3;
+    top:70px;
+	transform: rotate(-20deg);
+	transition: 0.5s;
+}
+.heroright{
+    position:absolute;
+	left:210px;
+    width:220px;
+    height:350px;
+    border-radius: 20px;
+    z-index:1;
+    top:70px;
+	transform: rotate(20deg);
+	transition: 0.5s;
+}
+div img:hover{
+	z-index: 34;
+	/*border: 3px solid blueviolet;*/
+    box-shadow: 0px 0px 75px red;
+}
+.details{
+    position:relative;
+    min-height:500px;
+    margin-bottom: 20px;
+}
+.details p{
+    position:relative;
+    left:500px;
+    font-size:15pt;
+	max-width: 300px;
+	text-shadow: 2px 2px rgba(255,255,255,0.2);
+}
+.hero:hover{
+    z-index:12;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.85);
+    min-height:30px;
+    width:200px;
+    font-size: 15pt;
+    text-align: center;
+    padding: 0;
+    color:red;
+    box-shadow: 0px 0px 16px 0px gray;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-family: witcher;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: 0.7s;
+}
+
+.dropdown-content a:hover {
+    color:red;
+    background-color: rgba(0,0,0,1);
+    border-radius: 30px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.lewo{
+    float:left;
+    width:240px;
+    height:320px;
+    margin-right:25px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px darkred;
+}
+.prawo{
+    float:right;
+    width:240px;
+    height:320px;
+    margin-left:25px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px darkred;
+}
+hr{
+    width: 70%;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width:1px;
+}
+video{
+    width: 480px;
+    box-shadow: 5px 5px 30px darkred;
+    border-radius: 20px;
+}
+#netflix{
+    width:200px;
+    height:250px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px darkred;
+}
+#muzyka{
+    width:400px;
+    height: 300px;
+    float:left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px darkred;
+}
+#tablem{
+    margin: 0 auto;
+    border-radius: 20px;
+    /*box-shadow: 10px 10px 15px gray;*/
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(255,255,255,0.3));
+}
+td{
+    font-family: kawoszeh;
+    width: 200px;
+    height: 70px;
+}
+th{
+    font-family: kawoszeh;
+    transition: 0.8s;
+    height: 35px;
+}
+th:hover{
+    color:red;
+
+}
+a{
+   z-index: 1209;
+}
+#gosciu{
+    margin: 0 auto;
+    width:400px;
+    height:650px;
+    position:absolute;
+    bottom:200px;
+    left:25%;
+}
+h1{
+    font-family: witcher;
+    text-align: center;
+    font-size: 45pt;
+    margin-top: 0px;
+    text-shadow: 5px 5px 5px red;
+}
+p#gl{
+    font-family:kawoszeh;
+    font-size:19pt;
+    text-indent: 0;
+    text-align: center;
+    margin-left:4%;
+    margin-top:20px;
+}
+.boh:hover .napis{
+    display: block;
+    transition: 0.8s;
+}
+.boh:hover{
+        box-shadow: 0 0 50px darkred;
+}
+.napis{
+    text-align: center;
+    position: relative;
+    top:30%;
+    color:white;
+    font-size: 40pt;
+    transition: 0.8s;
+    display:none;
+    margin:0;
+    padding: 0;
+}
+.boh{
+/*    background-image: url(Obrazy/boh.jpg);*/
+    background-size: cover;
+    width:290px;
+    height:150px;
+    border-radius: 20px;
+    transition:0.8s;
+}
+#bohaterowie{
+    background-image: url(Obrazy/boh.jpg);
+}
+#muzyk{
+    background-image: url(Obrazy/muzyka.jpg);
+}
+#rasy{
+    background-image: url(Obrazy/rasy.jpg);
+}
+#literatura{
+    background-image: url(Obrazy/literatura.jpg);
+}
+#boh{
+    margin-top: 30px;
+}
+#boh td{
+    width:290px;
+}
+/*    body{min-width:1366px}
+    main{width:930px}
+    aside{width:200px}*/
+}
+@media(max-width:1000px){
+    body{min-width:1000px;}
+    main{width:750px;}
+    footer{width:750px;}
+    aside{width:120px;}
+    button{width:130px;margin-left:20px;}
+   .hero{width:200px;}
+    .heroleft{width:200px;}
+    .heroright{width:200px;}
+    .details p{font-size:14pt;width:200px;}
+    #boh td{width:230px;}
+    .boh{width:230px;}
+    .napis{font-size: 30pt;}
+}
+@media print{
+    body{min-width:1000px;}
+    main{width:750px;}
+    footer{width:750px;}
+    aside{width:120px;}
+    button{width:130px;margin-left:20px;}
+   .hero{width:200px;}
+    .heroleft{width:200px;}
+    .heroright{width:200px;}
+    .details p{font-size:14pt;width:200px;}
+    #boh td{width:230px;}
+    .boh{width:230px;}
+    .napis{font-size: 30pt;}
+}

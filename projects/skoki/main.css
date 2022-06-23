@@ -1,0 +1,74 @@
+body
+{
+	background-color: #2F3336;
+	color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+h1
+{
+	font-size: 36px;
+	font-weight: 400;
+	color: #C0D06F;
+	margin: 20px;
+}
+.dropdown-menu a{
+	color: white;
+}
+.dropdown-item:hover{
+	background-color: #C0D06F;
+}
+.jumpers
+{
+	text-align: center;
+}
+.jumpers p{
+	margin-bottom: 30px;
+}
+.jumpers figcaption{
+	margin-top:8px;
+}
+.navbar{
+	min-height: 120px;
+}
+.bg-jumpers{
+	background-color: #C0D06F;
+}
+.wpis{
+	text-align: justify;
+	font-size: 16px;
+	padding: 30px;
+	margin-bottom: 40px;
+}
+.blockquote{
+	line-height: 120%;
+}
+.list-group-item-dark{
+ background-color: #373a3d;
+ color: white;
+}
+.list-group .active{
+	background-color: #C0D06F !important;
+	cursor: default ;
+}
+.list-group-item-dark:hover{
+	background-color: #C0D06F !important;
+	color: white;
+}
+.list-group{
+	text-align: center;
+}
+@media(max-width: 575px){
+
+	.wpis{
+		text-align: left;
+		font-size: 15px;
+		/* margin: 40px 20px; */
+	}
+	.float-start, .float-end{
+		width: 50%;
+	} 
+	.blockquote{
+		line-height: 27px;
+	}
+}

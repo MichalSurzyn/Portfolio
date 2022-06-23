@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BIURO PODRÓŻY | TROPEM ŚREDNIOWIECZNYCH ZAMKÓW</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Michał Surzyn">
+    <meta name="keywords" content="Zamki, Średniowiecze, Polska, Francja, Niemcy, Czechy, Orle Gniazda ">
+    <meta name="description" content="Biuro Podróży, tropem średniowiecznych zamków">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="obrazy/fav.png">
+</head>
+
+<body>
+    
+<div id="contener">
+    <header>
+        <a href="index.html"><div id="logo">
+            
+          
+            
+            
+            </div></a>
+        
+        <nav>
+            <ul>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="oferty.html">Oferta</a></li>
+                <li><a href="promocje.html">Promocje</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div id="czas">
+            
+            <script>
+                function czas(){
+                var dzis = new Date();
+                var x = dzis.toLocaleTimeString();
+                    document.getElementById("czas").innerHTML = x;
+                }
+                czas();
+                setInterval('czas()',1000);
+            </script>
+        </div>
+    </header>
+
+    <main>
+        <div id="promocja">
+        
+                <h1>Aktualna Promocja:</h1>
+
+                <img src="" id="promo">
+            <p id="okaz"></p>
+            <p id="ee"></p>
+        </div>
+        
+    <script>
+    
+            var tab = ["obrazy/niemcy.jpg","obrazy/francja.jpg","obrazy/wawel.jpg","obrazy/orleg.jpg","obrazy/czechy.jpg"];
+            
+            
+        function pro(){
+        
+        var losf = Math.random()*5;
+        var los = Math.floor(losf);
+        document.getElementById("promo").src = tab[los];
+        
+            if(los == 0){
+                document.getElementById("okaz").innerHTML = "Dzisiejsza okazja dotyczy: Wycieczki po zamkach Niemieckich";
+                document.getElementById("ee").innerHTML = "<br>Dzięki promocji otrzymasz aż <strong>-20%</strong> na wycieczkę wraz ze swoją rodziną, wystarczy że się zarejestrujesz do końca tygodnia i promocja jest Twoja :) !!!";
+            }
+
+            if(los == 1){
+                document.getElementById("okaz").innerHTML = "Dzisiejsza okazja dotyczy: Wycieczki po zamkach Francuskich";
+                document.getElementById("ee").innerHTML = "<br>Dzięki promocji otrzymasz aż <strong>-30%</strong> na wycieczkę po Francuskich zamkach dla osób niepełnosprawnych!!!";
+            }
+
+            if(los == 2){
+                document.getElementById("okaz").innerHTML = "Dzisiejsza okazja dotyczy: Zamku Wawel ";
+                document.getElementById("ee").innerHTML = "<br>Dzięki promocji otrzymasz aż <strong>-60%</strong> na wycieczkę po zamku Wawelskim, promocja dotyczy tylko większej grupy osób (25+)!!!";
+            }
+
+            if(los == 3){
+                document.getElementById("okaz").innerHTML = "Dzisiejsza okazja dotyczy: Wycieczki szlakiem Orlich Gniazd";
+                document.getElementById("ee").innerHTML = "<br>Dzięki promocji otrzymasz aż <strong>-10%</strong> na wycieczkę szlakiem Orlich Gniazd dla całej rodziny!!!";
+            }
+
+            if(los == 4){
+                document.getElementById("okaz").innerHTML = "Dzisiejsza okazja dotyczy: Wycieczki po zamkach Francuskich ";
+                document.getElementById("ee").innerHTML = "<br>Dzięki promocji otrzymasz aż <strong>-120%</strong> na wycieczkę do czech, oprócz zniżki otrzymasz";
+            }
+            
+        }
+
+        pro();
+        
+
+        
+        
+            
+    </script>
+        
+    </main>
+
+    
+</div>
+    <footer>
+        <br>
+        <h2>Copyright 2021 Michał Surzyn 3F ZSE &copy;</h2>
+    </footer>
+</body>
+</html>
