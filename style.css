@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
 *{
     color: white;
-    /* font-family: 'Raleway', sans-serif; */
     font-family: 'El Messiri', sans-serif;
 }
 p{
@@ -135,12 +134,3 @@ footer a{
         font-size: 14pt !important;
     }
 }
-/* .overflow-hidden:hover{
-    box-shadow: 0 0 30px rgb(255, 0, 255);
-} */
-/* .nav-link{
-    color: rgba(255, 255, 255, 0.8) !important;
-}
-.nav-link:hover{
-    color: rgba(255, 255, 255, 1) !important;
-} */
